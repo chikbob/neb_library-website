@@ -26,10 +26,10 @@
 <header class="header">
   <div class="header__top">
     <div class="header__top-list">
-      <a href="index.html" class="header__top-list_item">Про бібліотеку</a>
-      <a href="index.html" class="header__top-list_item">Популярні матеріали</a>
-      <a href="index.html" class="header__top-list_item">Новини</a>
-      <a href="index.html" class="header__top-list_item">Зворотній зв'язок</a>
+      <a href="about.html" class="header__top-list_item">Про бібліотеку</a>
+      <a href="index.html#materials" class="header__top-list_item">Популярні матеріали</a>
+      <a href="index.html#news" class="header__top-list_item">Новини</a>
+      <a href="feedback.html" class="header__top-list_item">Зворотній зв'язок</a>
     </div>
     <div class="header__top-list">
       <a onclick="alertAdd()" class="header__top-list_item">Додати в закладки</a>
@@ -63,7 +63,7 @@
     <div class="index__text-description">
       Національна електронна бібліотека (НЕБ) - федеральна державна інформаційна система, створювана Міністерством
       культури України за участю найбільших бібліотек, музеїв, архівів, видавців та інших правовласників.
-      <br><a href="index.html" class="index__text-description_link">Докладніше про систему</a>
+      <br><a href="about.html" class="index__text-description_link">Докладніше про систему</a>
     </div>
   </div>
   <div class="index__slideshow">
@@ -80,10 +80,10 @@
     </div>
     <img src="img/slideshow_poster.svg" alt="slideshow_poster.svg">
   </div>
-  <div class="index__materials">
-    <div class="index__materials-content">
+  <div id="materials" class="index__materials">
+    <a class="index__materials-content">
       Популярні матеріали
-    </div>
+    </a>
     <div class="index__materials-list">
       <div class="index__materials-item">
         <img src="img/poster1.svg" alt="poster1.svg">
@@ -117,7 +117,7 @@
       </div>
     </div>
   </div>
-  <div class="index__materials">
+  <div id="news" class="index__materials">
     <div class="index__materials-content">
       Новини
     </div>
@@ -151,14 +151,14 @@
     </div>
     <div class="footer__top-links">
       <div class="footer__top-list">
-        <a href="index.html" class="footer__top-list_item">Про бібліотеку</a>
-        <a href="index.html" class="footer__top-list_item">Новини</a>
-        <a href="index.html" class="footer__top-list_item">Особистий кабінет</a>
+        <a href="about.html" class="footer__top-list_item">Про бібліотеку</a>
+        <a href="index.html#news" class="footer__top-list_item">Новини</a>
+        <a onclick="alertTomorrow()" class="footer__top-list_item">Особистий кабінет</a>
       </div>
       <div class="footer__top-list">
-        <a href="index.html" class="footer__top-list_item">Популярні матеріали</a>
-        <a href="index.html" class="footer__top-list_item">Зворотній зв'язок</a>
-        <a href="index.html" class="footer__top-list_item">Питання та відповіді</a>
+        <a href="index.html#materials" class="footer__top-list_item">Популярні матеріали</a>
+        <a href="feedback.html" class="footer__top-list_item">Зворотній зв'язок</a>
+        <a onclick="alertTomorrow()" class="footer__top-list_item">Питання та відповіді</a>
       </div>
     </div>
   </div>

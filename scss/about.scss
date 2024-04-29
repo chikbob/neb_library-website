@@ -1,0 +1,58 @@
+.about {
+  background: rgb(255, 255, 255);
+  height: fit-content;
+
+  margin: 23px 300px;
+  padding: 22px 38px 56px;
+
+  &__exit {
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__content {
+    margin: 43px 0;
+
+    color: rgb(18, 18, 18);
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      margin: 0 0 50px 0;
+    }
+
+    &-item {
+      width: 300px;
+      height: 300px;
+
+      padding: 18px 22px 26px 20px;
+
+      background: rgb(217, 217, 217);
+
+      &_label {
+        margin: 10px 0 26px 0;
+
+        color: rgb(18, 18, 18);
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      &_description {
+        color: rgb(0, 0, 0);
+        font-size: 19px;
+        font-weight: 400;
+      }
+    }
+  }
+}

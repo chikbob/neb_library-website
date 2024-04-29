@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>НЕБ</title>
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/header.css">
+  <link rel="stylesheet" href="scss/footer.css">
+  <link rel="stylesheet" href="scss/feedback.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<header class="header">
+  <div class="header__top">
+    <div class="header__top-list">
+      <a href="about.html" class="header__top-list_item">Про бібліотеку</a>
+      <a href="index.html#materials" class="header__top-list_item">Популярні матеріали</a>
+      <a href="index.html#news" class="header__top-list_item">Новини</a>
+      <a href="feedback.html" class="header__top-list_item">Зворотній зв'язок</a>
+    </div>
+    <div class="header__top-list">
+      <a onclick="alertAdd()" class="header__top-list_item">Додати в закладки</a>
+      <a onclick="alertTomorrow()" class="header__top-list_item">Увійти</a>
+    </div>
+  </div>
+  <div class="header__bot">
+    <div class="header__bot-list">
+      <a href="index.html?_ijt=vm32a8615e1bukqr7h0vgvpkm9&_ij_reload=RELOAD_ON_SAVE" class="header__bot-list_name_link">НЕБ</a>
+      <div class="header__bot-list_name">Національна електронна бібліотека</div>
+    </div>
+    <div class="header__bot-list">
+      <a class="header__bot-list_item">
+        <img src="img/insta.svg" alt="insta.svg">
+      </a>
+      <a class="header__bot-list_item">
+        <img src="img/x-com.svg" alt="x-com.svg">
+      </a>
+      <a class="header__bot-list_item">
+        <img src="img/facebook.svg" alt="facebook.svg">
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="feedback">
+  <div class="feedback__content">
+    Зворотній зв’язок
+  </div>
+  <div class="feedback__email">
+    <div class="feedback__email-text">Електронна пошта</div>
+    <input id="email" type="email" class="feedback__email-input">
+  </div>
+  <div class="feedback__theme">
+    <div class="feedback__theme-text">Тема</div>
+    <select id="theme" class="feedback__theme-input">
+      <option value="">Запитання</option>
+    </select>
+  </div>
+  <div class="feedback__message">
+    <div class="feedback__message-text">Ваше повідомлення</div>
+    <textarea id="message" rows="8" class="feedback__message-input"></textarea>
+  </div>
+  <div class="feedback__checkbox">
+    <input class="feedback__checkbox-input" type="checkbox">
+    <div class="feedback__checkbox-text">Я приймаю
+      <a href="index.html" class="feedback__checkbox-text_link">Угоду користувача сайту</a>
+      про обробку персональних даних.
+    </div>
+  </div>
+  <div class="feedback__access">
+    <input onclick="requestSupport()" type="button" value="Відправити!" class="feedback__access-button">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__top-label">
+      Національна електронна бібліотека
+    </div>
+    <div class="footer__top-links">
+      <div class="footer__top-list">
+        <a href="about.html" class="footer__top-list_item">Про бібліотеку</a>
+        <a href="index.html#news" class="footer__top-list_item">Новини</a>
+        <a onclick="alertTomorrow()" class="footer__top-list_item">Особистий кабінет</a>
+      </div>
+      <div class="footer__top-list">
+        <a href="index.html#materials" class="footer__top-list_item">Популярні матеріали</a>
+        <a href="feedback.html" class="footer__top-list_item">Зворотній зв'язок</a>
+        <a onclick="alertTomorrow()" class="footer__top-list_item">Питання та відповіді</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bot">
+    <div class="footer__bot-list">
+      <a onclick="alertTomorrow()" class="footer__bot-list_item">
+        Про проект
+      </a>
+      <a onclick="alertTomorrow()" class="footer__bot-list_item">
+        Правова інформація
+      </a>
+      <a onclick="alertTomorrow()" class="footer__bot-list_item">
+        Угода користувача
+      </a>
+      <a onclick="alertTomorrow()" class="footer__bot-list_item">
+        Політика щодо захисту персональних даних
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

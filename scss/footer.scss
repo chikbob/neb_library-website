@@ -28,6 +28,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-auto-flow: column;
+      cursor: pointer;
 
       &:last-child {
         margin: 23px 0 0;

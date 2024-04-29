@@ -1,0 +1,136 @@
+.feedback {
+  margin: 41px 300px 110px;
+  width: 450px;
+
+  &__content {
+    color: rgb(18, 18, 18);
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__email {
+    margin: 41px 0 30px;
+
+    &-text {
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      font-weight: 400;
+
+      margin: 0 0 14px;
+    }
+
+    &-input {
+      width: 438px;
+      height: 28px;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-weight: 400;
+      padding: 5px;
+
+      border: 1px solid rgb(134, 134, 134);
+      border-radius: 5px;
+
+      background: rgb(225, 225, 225);
+    }
+  }
+
+  &__theme {
+    margin: 0 0 30px;
+
+    &-text {
+      font-size: 20px;
+
+      margin: 0 0 14px;
+    }
+
+    &-input {
+      width: 450px;
+      height: 40px;
+      color: rgb(0, 0, 0);
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+
+      border: 1px solid rgb(134, 134, 134);
+      border-radius: 5px;
+
+      background: rgb(220, 220, 220);
+    }
+  }
+
+  &__message {
+    margin: 0 0 30px;
+
+    &-text {
+      font-size: 20px;
+
+      margin: 0 0 14px;
+    }
+
+    &-input {
+      width: 438px;
+      height: 138px;
+
+      color: rgb(0, 0, 0);
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      padding: 5px;
+
+      background: rgb(218, 218, 218);
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+
+    margin: 0 0 60px;
+
+    &-text {
+      font-size: 16px;
+      font-weight: 400;
+
+      margin: 0 0 0 10px;
+
+      &_link {
+        font-size: 16px;
+        color: #1D9BF0;
+        text-decoration: none;
+      }
+    }
+
+    &-input {
+      margin: 3px 0 0;
+      padding: 0;
+
+      width: 19px;
+      height: 15px;
+
+      border: 1px solid rgb(134, 134, 134);
+      background: rgb(222, 222, 222);
+      border-radius: 5px;
+
+      &:checked {
+        background: #1D9BF0;
+      }
+    }
+  }
+
+  &__access {
+    font-size: 16px;
+    font-weight: 400;
+
+    &-button {
+      width: 200px;
+      height: 50px;
+
+      border-radius: 10px;
+      border: 0;
+      cursor: pointer;
+
+      background: rgb(155, 155, 155);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
