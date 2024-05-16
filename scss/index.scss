@@ -1,5 +1,783 @@
+@import 'media_mixin';
+
 .index {
   padding: 0 300px 0;
+
+  @include _1700 {
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: 150px;
+
+      &-high {
+        width: 450px !important;
+
+        font-size: 22px !important;
+      }
+
+      &-description {
+        width: 450px !important;
+        font-size: 14px !important;
+      }
+    }
+
+    &__slideshow {
+      height: 350px !important;
+
+      &-text {
+        margin: 45px 0 40px 81px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 26px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 450px;
+
+          font-size: 20px !important;
+          margin: 0 0 60px !important;
+        }
+
+        &_link {
+          font-size: 20px;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 26px !important;
+      }
+
+      &-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 240px !important;
+
+        & img {
+          width: 240px !important;
+        }
+
+        &_label {
+          width: 240px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 18px !important;
+        }
+
+        &_description {
+          width: 240px !important;
+          height: 60px;
+
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+
+  @include _1570 {
+    padding: 0 250px 0 !important;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: 150px;
+
+      &-high {
+        width: 400px !important;
+
+        font-size: 20px !important;
+      }
+
+      &-description {
+        width: 400px !important;
+        font-size: 12px !important;
+      }
+    }
+
+    &__slideshow {
+      height: 280px !important;
+
+      &-text {
+        margin: 35px 0 30px 70px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 24px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 350px !important;
+
+          font-size: 18px !important;
+          margin: 0 0 50px !important;
+        }
+
+        &_link {
+          font-size: 18px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 450px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 26px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 450px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 450px !important;
+        }
+
+        &_label {
+          width: 450px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 23px !important;
+        }
+
+        &_description {
+          width: 450px !important;
+          height: 60px;
+
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  @include _1250 {
+    padding: 0 120px 0 !important;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: 150px;
+
+      &-high {
+        width: 380px !important;
+
+        font-size: 21px !important;
+      }
+
+      &-description {
+        width: 380px !important;
+        font-size: 13px !important;
+      }
+    }
+
+    &__slideshow {
+      height: 330px !important;
+
+      &-text {
+        margin: 45px 0 40px 81px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 24px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 350px !important;
+
+          font-size: 18px !important;
+          margin: 0 0 85px !important;
+        }
+
+        &_link {
+          font-size: 18px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 450px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 26px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 450px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 450px !important;
+        }
+
+        &_label {
+          width: 450px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 23px !important;
+        }
+
+        &_description {
+          width: 450px !important;
+          height: 60px;
+
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  @include _1170 {
+    padding: 0 80px 0 !important;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: 150px;
+
+      &-high {
+        width: 380px !important;
+
+        font-size: 21px !important;
+      }
+
+      &-description {
+        width: 380px !important;
+        font-size: 13px !important;
+      }
+    }
+
+    &__slideshow {
+      height: 300px !important;
+
+      &-text {
+        margin: 45px 0 40px 81px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 24px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 350px !important;
+
+          font-size: 18px !important;
+          margin: 0 0 60px !important;
+        }
+
+        &_link {
+          font-size: 18px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 450px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 26px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 450px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 450px !important;
+        }
+
+        &_label {
+          width: 450px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 23px !important;
+        }
+
+        &_description {
+          width: 450px !important;
+          height: 60px;
+
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  @include _979 {
+    padding: 0 60px 0 !important;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: 150px;
+
+      &-high {
+        width: 250px !important;
+
+        font-size: 18px !important;
+      }
+
+      &-description {
+        width: 300px !important;
+        font-size: 11px !important;
+      }
+    }
+
+    &__slideshow {
+      height: 200px !important;
+
+      &-text {
+        margin: 30px 0 25px 50px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 18px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 300px !important;
+
+          font-size: 13px !important;
+          margin: 0 0 20px !important;
+        }
+
+        &_link {
+          font-size: 13px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 400px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 22px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 400px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 400px !important;
+        }
+
+        &_label {
+          width: 400px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 21px !important;
+        }
+
+        &_description {
+          width: 400px !important;
+          height: 60px;
+
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+
+  @include _768 {
+    padding: 0 60px 0 !important;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: fit-content !important;
+
+      &-high {
+        margin: 20px 0 !important;
+        width: 403px !important;
+
+        font-size: 18px !important;
+      }
+
+      &-description {
+        width: 403px !important;
+        font-size: 12px !important;
+      }
+    }
+
+    &__slideshow {
+      display: none !important;
+
+      height: 200px !important;
+
+      &-text {
+        margin: 30px 0 25px 50px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 18px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 300px !important;
+
+          font-size: 13px !important;
+          margin: 0 0 20px !important;
+        }
+
+        &_link {
+          font-size: 13px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 400px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 22px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 400px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 400px !important;
+        }
+
+        &_label {
+          width: 400px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 21px !important;
+        }
+
+        &_description {
+          width: 400px !important;
+          height: 60px;
+
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+
+  @include _600 {
+
+  }
+
+  @include _480 {
+    padding: 0 !important;
+    margin: 0 60px 0 !important;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 40px 0;
+
+      height: fit-content !important;
+
+      &-high {
+        margin: 20px 0 !important;
+        width: 300px !important;
+
+        font-size: 18px !important;
+      }
+
+      &-description {
+        width: 300px !important;
+        font-size: 12px !important;
+      }
+    }
+
+    &__slideshow {
+      display: none !important;
+
+      height: 200px !important;
+
+      &-text {
+        margin: 30px 0 25px 50px !important;
+
+        &_label {
+          width: 300px;
+
+          font-size: 18px !important;
+          margin: 0 0 18px;
+        }
+
+        &_description {
+          width: 300px !important;
+
+          font-size: 13px !important;
+          margin: 0 0 20px !important;
+        }
+
+        &_link {
+          font-size: 13px !important;
+        }
+      }
+
+      & img {
+
+      }
+    }
+
+    &__materials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 0 40px 0;
+      margin: 0 0 40px;
+
+      &-content {
+        width: 300px !important;
+        height: 57px;
+        margin: 30px 0;
+
+        font-size: 22px !important;
+
+        &:last-child {
+          margin: 0 !important;
+        }
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-item {
+        width: 300px !important;
+        margin: 0 0 30px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        & img {
+          width: 300px !important;
+        }
+
+        &_label {
+          width: 300px !important;
+          height: 60px;
+
+          margin: 22px 0 8px;
+          font-size: 20px !important;
+        }
+
+        &_description {
+          width: 300px !important;
+          height: 60px;
+
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+
+  @include _350 {
+
+  }
 
   &__text {
     display: flex;

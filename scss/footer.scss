@@ -1,6 +1,422 @@
+@import 'media_mixin';
+
 .footer {
   width: 100%;
   height: 269px;
+
+  @include _1570 {
+    &__top {
+      justify-content: space-between;
+      padding: 60px 250px 96px !important;
+
+      &-label {
+        width: 30% !important;
+        margin: 0 50px 0 0;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        padding: 0 250px 0 !important;
+        height: 100%;
+
+        &_item {
+          font-size: 14px;
+          margin: 0 16px 0 !important;
+
+          &:first-child {
+            margin: 0 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 0 0 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _1250 {
+    &__top {
+      justify-content: space-between;
+      padding: 60px 120px 96px !important;
+
+      &-label {
+        width: 30% !important;
+        margin: 0 50px 0 0;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        padding: 0 120px 0 !important;
+        height: 100%;
+
+        &_item {
+          font-size: 14px;
+          margin: 0 16px 0 !important;
+
+          &:first-child {
+            margin: 0 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 0 0 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _1170 {
+    &__top {
+      justify-content: space-between;
+      padding: 60px 80px 96px !important;
+
+      &-label {
+        width: 30% !important;
+        margin: 0 50px 0 0;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        padding: 0 80px 0 !important;
+        height: 100%;
+
+        &_item {
+          font-size: 14px;
+          margin: 0 16px 0 !important;
+
+          &:first-child {
+            margin: 0 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 0 0 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _979 {
+    &__top {
+      justify-content: space-between;
+      padding: 60px 60px 96px !important;
+
+      &-label {
+        width: 30% !important;
+        margin: 0 50px 0 0;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        padding: 0 60px 0 !important;
+        height: 100%;
+
+        &_item {
+          font-size: 12px !important;
+          margin: 0 16px 0 !important;
+
+          &:first-child {
+            margin: 0 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 0 0 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _768 {
+    &__top {
+      justify-content: space-between;
+      padding: 60px 60px 96px !important;
+
+      &-label {
+        width: 30% !important;
+        margin: 0 50px 0 0;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        height: fit-content !important;
+        flex-direction: column;
+        padding: 0 60px 0 !important;
+
+        &_item {
+          font-size: 14px !important;
+          margin: 16px 0 0 !important;
+
+          &:first-child {
+            margin: 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 16px 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _600 {
+    &__top {
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 60px 96px !important;
+
+      &-label {
+        width: 190px !important;
+        margin: 0 0 20px !important;
+        font-size: 24px !important;
+        font-weight: 600;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-list {
+        display: flex !important;
+        flex-direction: column !important;
+        cursor: pointer;
+
+        padding: 0 !important;
+
+        &:last-child {
+          margin: 23px 0 0;
+        }
+
+        &_item {
+          width: 190px;
+          padding: 20px 0 0 0 !important;
+
+          color: rgb(65, 65, 65);
+          font-size: 18px;
+          font-weight: 400;
+
+          text-decoration: underline;
+
+          &:first-child {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    &__bot {
+      height: 32px;
+
+      &-list {
+        height: fit-content !important;
+        flex-direction: column;
+        padding: 0 60px 0 !important;
+
+        &_item {
+          font-size: 14px !important;
+          margin: 16px 0 0 !important;
+
+          &:first-child {
+            margin: 16px 0 0 !important;
+          }
+
+          &:last-child {
+            margin: 16px 0 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include _480 {
+
+  }
+
+  @include _350 {
+
+  }
 
   &__top {
     display: flex;
@@ -25,10 +441,10 @@
     }
 
     &-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-auto-flow: column;
+      display: flex;
       cursor: pointer;
+
+      padding: 0 0 0 20px;
 
       &:last-child {
         margin: 23px 0 0;
@@ -36,7 +452,7 @@
 
       &_item {
         width: 190px;
-        padding: 0 49px;
+        padding: 0 49px 0 0;
 
         color: rgb(65, 65, 65);
         font-size: 18px;
@@ -64,7 +480,7 @@
         text-decoration-line: underline;
         cursor: pointer;
 
-        margin: 32px;
+        margin: 0 32px 0;
 
         &:first-child {
           margin: 0 32px 0 0;

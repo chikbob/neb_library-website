@@ -2,6 +2,93 @@
   margin: 41px 300px 110px;
   width: 450px;
 }
+@media (max-width: 1570px) {
+  .feedback {
+    margin: 41px 250px 110px !important;
+  }
+}
+@media (max-width: 1250px) {
+  .feedback {
+    margin: 41px 120px 110px !important;
+  }
+}
+@media (max-width: 1170px) {
+  .feedback {
+    margin: 41px 60px 110px !important;
+  }
+}
+@media (max-width: 600px) {
+  .feedback {
+    margin: 41px 60px 110px !important;
+    width: 60% !important;
+  }
+  .feedback__content {
+    font-size: 34px !important;
+  }
+  .feedback__email {
+    margin: 41px 0 30px;
+  }
+  .feedback__email-text {
+    font-size: 20px;
+    margin: 0 0 14px;
+  }
+  .feedback__email-input {
+    width: 90% !important;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .feedback__theme {
+    margin: 0 0 30px;
+  }
+  .feedback__theme-text {
+    font-size: 20px;
+    margin: 0 0 14px;
+  }
+  .feedback__theme-input {
+    width: 93.5% !important;
+    height: 40px;
+    font-size: 16px;
+  }
+  .feedback__message {
+    margin: 0 0 30px;
+  }
+  .feedback__message-text {
+    font-size: 20px;
+    margin: 0 0 14px;
+  }
+  .feedback__message-input {
+    width: 90% !important;
+    height: 138px;
+    font-size: 14px;
+  }
+  .feedback__checkbox {
+    display: flex;
+    margin: 0 0 60px;
+  }
+  .feedback__checkbox-text {
+    font-size: 12px !important;
+    margin: 0 0 0 10px;
+  }
+  .feedback__checkbox-text_link {
+    font-size: 12px !important;
+  }
+  .feedback__checkbox-input {
+    margin: 3px 0 0;
+    padding: 0;
+    width: 19px;
+    height: 15px;
+  }
+  .feedback__access {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .feedback__access-button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
 .feedback__content {
   color: rgb(18, 18, 18);
   font-size: 36px;

@@ -1,6 +1,134 @@
+@import 'media_mixin';
+
 .feedback {
   margin: 41px 300px 110px;
   width: 450px;
+
+  @include _1570 {
+    margin: 41px 250px 110px !important;
+  }
+
+  @include _1250 {
+    margin: 41px 120px 110px !important;
+  }
+
+  @include _1170 {
+    margin: 41px 60px 110px !important;
+  }
+
+  @include _979 {
+
+  }
+
+  @include _768 {
+
+  }
+
+  @include _600 {
+    margin: 41px 60px 110px !important;
+    width: 60% !important;
+
+    &__content {
+      font-size: 34px !important;
+    }
+
+    &__email {
+      margin: 41px 0 30px;
+
+      &-text {
+        font-size: 20px;
+        margin: 0 0 14px;
+      }
+
+      &-input {
+        width: 90% !important;
+        height: 28px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+
+    &__theme {
+      margin: 0 0 30px;
+
+      &-text {
+        font-size: 20px;
+
+        margin: 0 0 14px;
+      }
+
+      &-input {
+        width: 93.5% !important;
+        height: 40px;
+
+        font-size: 16px;
+      }
+    }
+
+    &__message {
+      margin: 0 0 30px;
+
+      &-text {
+        font-size: 20px;
+
+        margin: 0 0 14px;
+      }
+
+      &-input {
+        width: 90% !important;
+        height: 138px;
+
+        font-size: 14px;
+      }
+    }
+
+    &__checkbox {
+      display: flex;
+
+      margin: 0 0 60px;
+
+      &-text {
+        font-size: 12px !important;
+
+        margin: 0 0 0 10px;
+
+        &_link {
+          font-size: 12px !important;
+        }
+      }
+
+      &-input {
+        margin: 3px 0 0;
+        padding: 0;
+
+        width: 19px;
+        height: 15px;
+
+        &:checked {
+        }
+      }
+    }
+
+    &__access {
+      font-size: 16px;
+      font-weight: 400;
+
+      &-button {
+        width: 200px;
+        height: 50px;
+
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include _480 {
+
+  }
+
+  @include _350 {
+
+  }
 
   &__content {
     color: rgb(18, 18, 18);

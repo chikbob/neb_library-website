@@ -1,9 +1,365 @@
+@import 'media_mixin';
+
 .about {
   background: rgb(255, 255, 255);
   height: fit-content;
 
   margin: 23px 300px;
   padding: 22px 38px 56px;
+
+  @include _1700 {
+    margin: 23px 300px;
+    padding: 22px 38px 56px;
+
+    &__exit {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 28px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 0 50px 0;
+      }
+
+      &-item {
+        width: 250px !important;
+        height: 250px !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 22px !important;
+        }
+
+        &_description {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  @include _1570 {
+    margin: 23px 250px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 28px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 250px !important;
+        height: 250px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 22px !important;
+        }
+
+        &_description {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  @include _1250 {
+    margin: 23px 120px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 28px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 250px !important;
+        height: 250px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 22px !important;
+        }
+
+        &_description {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  @include _1170 {
+    margin: 23px 80px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 28px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 250px !important;
+        height: 250px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 22px !important;
+        }
+
+        &_description {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  @include _979 {
+    margin: 23px 60px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 28px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 250px !important;
+        height: 250px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 22px !important;
+        }
+
+        &_description {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+
+  @include _768 {
+
+  }
+
+  @include _600 {
+
+  }
+
+  @include _480 {
+    margin: 23px 30px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 12px !important;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 23px !important;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 220px !important;
+        height: 220px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 19px !important;
+        }
+
+        &_description {
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+
+  @include _350 {
+    margin: 23px 30px !important;
+    padding: 22px 38px 6px !important;
+
+    &__exit {
+      font-size: 10px !important;
+    }
+
+    &__content {
+      margin: 43px 0;
+
+      font-size: 20px !important;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:first-child {
+        margin: 0 !important;
+      }
+
+      &-item {
+        width: 150px !important;
+        height: 150px !important;
+
+        margin: 0 0 50px 0 !important;
+
+        padding: 18px 22px 26px 20px;
+
+        &_label {
+          margin: 10px 0 26px 0;
+
+          font-size: 14px !important;
+        }
+
+        &_description {
+          font-size: 9px !important;
+        }
+      }
+    }
+  }
 
   &__exit {
     color: rgb(65, 65, 65);
